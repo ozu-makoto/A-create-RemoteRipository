@@ -4,7 +4,7 @@
 <title>PHPのテスト</title>
 </head>
 <body>
-<?php
+<?php//おはようございます
 $db_user = "sample";//ユーザー名
 $db_pass = "password";//パスワード
 $db_host = "localhost";//ホスト名
