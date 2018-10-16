@@ -27,7 +27,7 @@ try {
   $sql = "INSERT INTO member (last_name, first_name, age) VALUES(:last_name, :first_name, :age )";
   $stmh = $pdo->prepare($sql);
   $stmh->bindValue(':last_name', $_POST['last_name'], PDO::PARAM_STR);
-  $stmh->bindValue(':first_name', $_POST['first_name'], PDO::PARAM_STR);
+  $stmh->bindValue(':first_name', $_POST['first_name'], PDO::PARAM_STR);//こんばんは
   $stmh->bindValue(':age', $_POST['age'], PDO::PARAM_INT);
   $stmh->execute();
   $pdo->commit();
